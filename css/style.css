@@ -484,6 +484,7 @@ header .navbar .swiper-button-next {
   position: absolute;
   top: 105%;
   z-index: 20;
+  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
 }
 header .navbar .swiper-button-prev:focus,
 header .navbar .swiper-button-next:focus {
@@ -497,8 +498,14 @@ header .navbar .swiper-button-next::after {
 header .navbar .swiper-button-prev {
   left: 42%;
 }
+header .navbar .swiper-button-prev:hover {
+  transform: translateX(-5px);
+}
 header .navbar .swiper-button-next {
   right: 42%;
+}
+header .navbar .swiper-button-next:hover {
+  transform: translateX(5px);
 }
 header .navbar .swiper {
   width: 100%;
@@ -927,8 +934,14 @@ footer .bottom .right li:hover a {
   header .navbar .swiper-button-prev {
     transform: translate(-40px, -68px);
   }
+  header .navbar .swiper-button-prev:hover {
+    transform: translate(-43px, -68px);
+  }
   header .navbar .swiper-button-next {
     transform: translate(40px, -68px);
+  }
+  header .navbar .swiper-button-next:hover {
+    transform: translate(43px, -68px);
   }
   header .navbar .swiper {
     overflow: visible;
@@ -1121,12 +1134,14 @@ footer .bottom .right li:hover a {
     border-right: none;
   }
   header .nav .nav-menu form.search button.cancle {
-    width: 8%;
+    width: 12%;
     height: 100%;
     border: none;
     margin: 0;
+    display: inline-flex;
   }
   header .nav .nav-menu form.search button.cancle span {
+    padding: 5px 0 !important;
     font-size: 0.8rem;
   }
   header .nav .nav-menu form.search button.cancle:focus {
@@ -1180,11 +1195,21 @@ footer .bottom .right li:hover a {
   header.mb32 .navbar .swiper-button-next {
     transform: translate(40px, -62px);
   }
+  header.mb32 .navbar .swiper-button-next:hover {
+    transform: translate(45px, -62px);
+  }
   header.mb32 .navbar .swiper-button-prev {
     transform: translate(-40px, -62px);
   }
+  header.mb32 .navbar .swiper-button-prev:hover {
+    transform: translate(-45px, -62px);
+  }
   header.mb32 .nav .nav-menu form.search .input-placeholder {
-    width: 80%;
+    width: 87%;
+  }
+  header.mb32 .nav .nav-menu form.search .cancle {
+    width: 13%;
+    display: inline-flex;
   }
   main {
     position: relative;

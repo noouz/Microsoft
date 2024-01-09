@@ -1,5 +1,0 @@
-(nav>(h1.nav-logo)+(ul.nav-menu-L>li.link*6)+(ul.nav-menu-R>li.nav-btn*4)+(.navbar))+
-
-(main>(section-1>(ul.choice>li.choice-item*3)+(ul.product>(li.product-item>img+.title>h3+p+(.more>a))*4)+(section-2>.xbox>img)+(section-3>h2{適用於商務}+(ul.business>(li.business-item>img+title>h3+p+(.more>a))*4))+(section-3>(.link>span+a+a)+p{台灣微軟股份有限公司統編 23525730}+a.toTop.button)))+
-
-(footer>(.others>ul.others-group>(li.others-group-card>h3+ul.list>(li>a)*5)*6)+(.bottom>(ul.left>(li>a)*2)+(ul.right>(li>a)*6)))
